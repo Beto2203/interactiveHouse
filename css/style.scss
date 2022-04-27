@@ -1,3 +1,7 @@
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
 /* Box Model Hack */
 * {
     box-sizing: border-box;
@@ -17,44 +21,48 @@
    clear: both;
 }
 
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
-body {
-
+:root {
+    user-select: none;
 }
 
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-header {
-
-}
-
-footer {
-
+ul {
+    list-style: none;
 }
 
 /******************************************
-/* MODULE
+/* STYLES
 /*******************************************/
+#container {
+    display: flex;
+}
 
+main {
+    display: flex;
+    width: 620px;
+    margin: auto;
+}
+main img {
+    width: 100%;
+    height: auto;
+}
 
+#objects {
+    width: 40%;
+    height: 20%;
+    display: flex;
+    margin: 50px;
+}
 
+.dragObject {
+    position: absolute;
+    z-index: 5;
+    cursor: move;
+    user-select: none;
+    object-fit: contain;
+    width: 50px;
+}
 
-
-
-/******************************************
-/* STATE
-/*******************************************/
-
-
-
-
-
-
-/******************************************
-/* OTHER STYLES
-/*******************************************/
+.dragObject img {
+    height: auto;
+    width: 50px;
+}

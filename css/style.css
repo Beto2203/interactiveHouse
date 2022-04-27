@@ -1,0 +1,70 @@
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+:root {
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/******************************************
+/* STYLES
+/*******************************************/
+#container {
+  display: flex;
+}
+
+main {
+  display: flex;
+  width: 620px;
+  margin: auto;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+#objects {
+  width: 40%;
+  height: 20%;
+  display: flex;
+  margin: 50px;
+}
+
+.dragObject {
+  position: absolute;
+  z-index: 5;
+  cursor: move;
+  user-select: none;
+  object-fit: contain;
+  width: 50px;
+}
+
+.dragObject img {
+  height: auto;
+  width: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
